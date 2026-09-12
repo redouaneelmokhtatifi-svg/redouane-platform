@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">منصة ريدوان التعليمية</string>
+    <string name="home">الرئيسية</string>
+    <string name="levels">المستويات</string>
+    <string name="favorites">المفضلة</string>
+    <string name="saved">المحفوظات</string>
+    <string name="search">البحث</string>
+    <string name="settings">الإعدادات</string>
+    <string name="about">حول التطبيق</string>
+    <string name="lessons">📚 الدروس</string>
+    <string name="exercises">📝 التمارين</string>
+    <string name="exams">📋 الامتحانات</string>
+    <string name="assignments">📑 الفروض</string>
+    <string name="welcome">أهلا وسهلا بك</string>
+    <string name="primary">ابتدائي</string>
+    <string name="secondary">إعدادي</string>
+    <string name="preparatory">تأهيلي</string>
+    <string name="arts">آداب وعلوم إنسانية</string>
+    <string name="science">علوم</string>
+    <string name="no_content">لا توجد عناصر متاحة</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="error">حدث خطأ ما</string>
+    <string name="retry">حاول مرة أخرى</string>
+    <string name="offline">لا يوجد اتصال بالإنترنت</string>
+    <string name="developer">المطور: رضوان المختطفي</string>
+    <string name="location">قصبة تادلة - جهة بني ملال-خنيفرة</string>
+    <string name="version">الإصدار 1.0.0</string>
+    <string name="app_description">تطبيق تعليمي شامل يدعم المنهج المغربي 2025/2026</string>
+</resources>

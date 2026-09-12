@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors for Light Theme -->
+    <color name="primary">#7C3AED</color>
+    <color name="primary_dark">#6D28D9</color>
+    <color name="secondary">#A78BFA</color>
+    <color name="tertiary">#10B981</color>
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#DC2626</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#1F2937</color>
+    <color name="on_surface">#1F2937</color>
+
+    <!-- Subject Colors -->
+    <color name="color_arabic">#FF6B6B</color>
+    <color name="color_french">#4ECDC4</color>
+    <color name="color_english">#45B7D1</color>
+    <color name="color_math">#F7B731</color>
+    <color name="color_science">#5F27CD</color>
+    <color name="color_history">#FF9FF3</color>
+    <color name="color_geography">#54A0FF</color>
+    <color name="color_islamic">#48DBFB</color>
+    <color name="color_physical_ed">#1DD1A1</color>
+    <color name="color_arts">#FFA502</color>
+</resources>

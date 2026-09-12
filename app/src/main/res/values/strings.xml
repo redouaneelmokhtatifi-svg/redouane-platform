@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Redouane Educational Platform</string>
+    <string name="home">Home</string>
+    <string name="levels">Levels</string>
+    <string name="favorites">Favorites</string>
+    <string name="saved">Saved</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="lessons">📚 Lessons</string>
+    <string name="exercises">📝 Exercises</string>
+    <string name="exams">📋 Exams</string>
+    <string name="assignments">📑 Assignments</string>
+    <string name="welcome">Welcome</string>
+    <string name="primary">Primary</string>
+    <string name="secondary">Secondary</string>
+    <string name="preparatory">Preparatory</string>
+    <string name="arts">Arts and Humanities</string>
+    <string name="science">Science</string>
+    <string name="no_content">No content available</string>
+    <string name="loading">Loading...</string>
+    <string name="error">An error occurred</string>
+    <string name="retry">Try Again</string>
+    <string name="offline">No internet connection</string>
+    <string name="developer">Developer: Redouane El Moukhtatifi</string>
+    <string name="location">Tadla Medina - Beni Mellal-Khénifra Region</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="app_description">A comprehensive educational application supporting the Moroccan curriculum 2025/2026</string>
+</resources>

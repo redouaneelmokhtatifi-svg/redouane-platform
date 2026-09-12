@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <full-backup-content>
+        <include domain="database" path="."/>
+        <include domain="shared_prefs" path="."/>
+        <exclude domain="cache" path="."/>
+    </full-backup-content>
+</manifest>
