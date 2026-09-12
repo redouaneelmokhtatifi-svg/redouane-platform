@@ -8,17 +8,20 @@ import java.util.Date
 data class Lesson(
     @PrimaryKey val id: String,
     val subjectId: String,
-    val unitId: String,
+    val unitId: String? = null,
     val title: String,
     val titleAr: String,
-    val description: String,
-    val descriptionAr: String,
-    val content: String? = null, // محتوى HTML أو نص
-    val imageUrl: String? = null,
+    val content: String,
+    val contentAr: String,
+    val objectives: List<String>? = null,
+    val pdfUrl: String? = null,
     val videoUrl: String? = null,
-    val documentUrl: String? = null,
+    val imageUrl: String? = null,
+    val source: String, // المصدر: وزارة التربية، TelmidTICE، AlloSchool
+    val sourceUrl: String? = null, // الرابط الأصلي
     val isFavorite: Boolean = false,
     val isSaved: Boolean = false,
+    val isOfflineAvailable: Boolean = false,
     val lastAccessedAt: Date? = null,
     val createdAt: Date = Date(),
     val updatedAt: Date = Date()
@@ -34,10 +37,14 @@ data class Exercise(
     val description: String,
     val descriptionAr: String,
     val difficulty: Difficulty,
-    val documentUrl: String? = null,
-    val solutionUrl: String? = null,
+    val exerciseContent: String,
+    val solution: String? = null,
+    val pdfUrl: String? = null,
+    val source: String,
+    val sourceUrl: String? = null,
     val isFavorite: Boolean = false,
     val isSaved: Boolean = false,
+    val isOfflineAvailable: Boolean = false,
     val createdAt: Date = Date(),
     val updatedAt: Date = Date()
 )
@@ -46,15 +53,18 @@ data class Exercise(
 data class Exam(
     @PrimaryKey val id: String,
     val subjectId: String,
+    val examYear: Int,
+    val examSession: String, // "عادية" أو "استثنائية"
     val title: String,
     val titleAr: String,
-    val description: String,
-    val descriptionAr: String,
     val examDate: Date? = null,
-    val documentUrl: String? = null,
+    val pdfUrl: String? = null,
     val solutionUrl: String? = null,
+    val source: String,
+    val sourceUrl: String? = null,
     val isFavorite: Boolean = false,
     val isSaved: Boolean = false,
+    val isOfflineAvailable: Boolean = false,
     val createdAt: Date = Date(),
     val updatedAt: Date = Date()
 )
@@ -68,10 +78,13 @@ data class Assignment(
     val description: String,
     val descriptionAr: String,
     val dueDate: Date? = null,
-    val documentUrl: String? = null,
+    val pdfUrl: String? = null,
     val solutionUrl: String? = null,
+    val source: String,
+    val sourceUrl: String? = null,
     val isFavorite: Boolean = false,
     val isSaved: Boolean = false,
+    val isOfflineAvailable: Boolean = false,
     val createdAt: Date = Date(),
     val updatedAt: Date = Date()
 )
@@ -82,12 +95,14 @@ data class Unit(
     val subjectId: String,
     val name: String,
     val nameAr: String,
+    val description: String? = null,
     val order: Int,
+    val source: String,
     val createdAt: Date = Date()
 )
 
 enum class Difficulty {
-    EASY,
-    MEDIUM,
-    HARD
+    EASY,    // سهل
+    MEDIUM,  // متوسط
+    HARD     // صعب
 }
